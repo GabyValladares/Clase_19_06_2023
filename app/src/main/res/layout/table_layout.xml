@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#E6F8FF"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/txtENombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ENombre"
+            android:textAlignment="textEnd"
+            android:textColor="#673AB7"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6F8FF"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/txtECedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/ECedula"
+            android:textAlignment="center"
+            android:textColor="#673AB7"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtCedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6F8FF"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/txtEEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/EEdad"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="#673AB7"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6F8FF"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/txtESexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/Sexo"
+            android:textAlignment="textStart"
+            android:textColor="#673AB7"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spSexo"
+            android:layout_width="213dp"
+            android:layout_height="43dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:onClick="irResultados"
+            android:text="ENVIAR" />
+    </TableRow>
+</TableLayout>
